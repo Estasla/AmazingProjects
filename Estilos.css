@@ -1,0 +1,128 @@
+/* Fondo general */
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    padding: 20px; 
+    background: linear-gradient(to right, #e3f2fd, #fce4ec); /* degradado suave */
+    color: #111; 
+  }
+  
+  /* Encabezado */
+  .site-header { 
+    text-align: center; 
+    padding: 36px 0; 
+    background: #60ee78; 
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .site-header h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 5px;
+  }
+  
+  .site-header p {
+    font-size: 1.1rem;
+  }
+  
+  /* Secciones principales */
+  main { 
+    max-width: 900px; 
+    margin: 20px auto; 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  }
+  
+  /* Títulos */
+  h2 {
+    color: #02ff74;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer { 
+    text-align: center; 
+    margin-top: 14px; 
+    font-size: 0.9rem; 
+    color: rgba(27, 26, 26, 0.5); 
+  }
+
+
+/* Sección Sobre mí */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c0c1ec;
+  }
+  /* Contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .contact-form button {
+    background: #007acc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: #005f99;
+  }
+  h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 50px;
+    height: 3px;
+    background: #ff4081; 
+    border-radius: 2px;
+  }
+  .typing {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
